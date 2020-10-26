@@ -11,10 +11,13 @@
             }
 
             .header {
-                display: flex;
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: 33.95px 42.65px 30px 32px;
+                gap: 20px;
+                margin-right: 1em;
                 height: 30px;
                 align-self: flex-end;
+                font-family: Arial, Helvetica, sans-serif;
             }
 
             .gmail {
@@ -23,10 +26,30 @@
                 font-size: 13px;
             }
 
+            .gmail a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .gmail a:hover {
+                color: slategray;
+                text-decoration: underline;
+            }
+
             .images {
                 margin: 5px 5px 5px 5px;
                 align-self: center;
                 font-size: 13px;
+            }
+
+            .images a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .images a:hover {
+                color: slategray;
+                text-decoration: underline;
             }
 
             .applications {
@@ -38,24 +61,32 @@
                 background-position: -132px -38px;
                 background-size: 528px 68px;
                 align-self: center;
+                filter:invert(50%);
+            }
+            .applications:hover {
+                filter:invert(0%);
             }
 
             .compte {
-                height: 30px;
-                width: 30px;
+                height: 32px;
+                width: 32px;
                 background-size: 30px 30px;
                 background-color: indigo;
+                align-self: center;
                 border-top-right-radius: 99%;
                 border-top-left-radius: 99%;
                 border-bottom-left-radius: 99%;
                 border-bottom-right-radius: 99%;
+            }
+
+            .compte p {
                 font-size: 13px;
                 font-weight: bold;
                 text-align: center;
                 color:white;
+                line-height: 9px;
+                vertical-align: middle;
             }
-
-            .compte p 
 
             .logo {
                 height: 300px;
@@ -75,7 +106,7 @@
                 </div>
                 <div class="applications">
                 </div>
-                <div class="compte">C</div>
+                <div class="compte"><p>C</p></div>
             </div>
             <div class="main">
                 <div class="logo">
