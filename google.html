@@ -90,10 +90,10 @@
             }
 
             .main {
-                margin-top: 90px;
+                margin-top: 4em;
                 width: 100%;
                 display:grid;
-                grid-template-rows: 10rem 4rem 3rem 10rem 10rem;
+                grid-template-rows: 10rem 4rem 3rem 4rem 4rem;
             }
 
             .logo {
@@ -113,7 +113,8 @@
                 justify-self: center;
                 margin-top: 0em;
                 height: 44px;
-                width: 483px;
+                width: 100%;
+                max-width: 483px;
                 border: solid;
                 border-width: 0.01rem;
                 border-color: lightgray;
@@ -186,8 +187,65 @@
                 color:black;
             }
 
-            
+            .playStore {
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                grid-row: 4/5;
+                align-self: center;
+            }
 
+            .playStore img {
+                justify-self: center;
+                align-self: center;
+            }
+            .playStore p {
+                justify-self: center;
+                align-self: center;
+                color: red;
+                margin-left: 4px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+            .playStore a {
+                justify-self: center;
+                align-self: center;
+                margin-left: 4px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                color: rgb(26, 13, 171);
+                text-decoration: none;
+            }
+            .playStore a:hover {
+                text-decoration: underline;
+            }
+
+            .language {
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                grid-row: 5/6;
+                align-self: center;
+            }
+
+            .language p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                justify-self: center;
+                align-self: center;
+            }
+            .language a {
+                justify-self: center;
+                align-self: center;
+                margin-left: 4px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                text-decoration: none;
+                color : rgb(26, 13, 171)
+            }
+            .language a:hover {
+                text-decoration: underline;
+            }
 
         </style>
     </head>
@@ -215,6 +273,30 @@
                 <div class="boutons">
                     <button class="searchGoogle">Recherche Google</button>
                     <button class="lucky">J'ai de la chance</button>
+                </div>
+                <div class="playStore">
+                    <img src="https://www.google.com/images/hpp/logo_play_prism.png">
+                    <p>Nouveau !</p>
+                    <a href="https://www.google.com/url?q=https://play.google.com/store/points%3Futm_source%3Demea_OO%26utm_medium%3Dhpp%26utm_content%3DOct0920%26utm_campaign%3DPlayPoints%26pcampaignid%3DMKT-RAC-emea-fr-1002256-OO-hpp-gm-PlayPoints-Oct0920-Text&source=hpp&id=19020671&ct=3&usg=AFQjCNEbLr-HZl6h9ucIQKtHY39kWhg9bg&sa=X&ved=0ahUKEwjt88mdqtPsAhVLJhoKHZoGDZEQ8IcBCA4">Rejoignez le programme de fidélité Google Play Points</a>
+                </div>
+                <div class="language">
+                    <p>Google disponible en :</p>
+                    <a href="https://www.google.fr/setprefs?sig=0_l55lPHPBXJuHkDbxJPvwQ8fOmq4%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwjt88mdqtPsAhVLJhoKHZoGDZEQ2ZgBCBA">English</a>
+                </div>
+                <div class="footer">
+                    <div class="location">
+                        <p>France</p>
+                    </div>
+                    <div class="legal">
+                        <p>Info consommateurs</p>
+                        <p>Confidentialité</p>
+                        <p>Conditions</p>
+                        <p>Paramètres</p>
+                        <p>Publicité</p>
+                        <p>Entreprise</p>
+                        <p>A propos</p>
+                        <p>Comment fonctionne la recherche Google ?</p>
+                    </div>
                 </div>
             </div>
         </div>
