@@ -90,15 +90,14 @@
             }
 
             .main {
-                margin-top: 30px;
+                margin-top: 90px;
                 width: 100%;
                 display:grid;
-                grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+                grid-template-rows: 10rem 4rem 3rem 10rem 10rem;
             }
 
             .logo {
                 grid-row: 1/2;
-                padding-top: 119px;
                 overflow: hidden;
                 align-self: center;
                 justify-self: center;
@@ -112,7 +111,7 @@
             .searchBar {
                 grid-row: 2/3;
                 justify-self: center;
-                margin-top: 3em;
+                margin-top: 0em;
                 height: 44px;
                 width: 483px;
                 border: solid;
@@ -124,7 +123,7 @@
                 grid-template-columns: 8% 87%;
             }
             .searchBar:hover {
-                border-style: ;
+                box-shadow: 1px 1px 5px lightgray, -1px -1px 5px lightgray;
             }
 
             .loupe {
@@ -144,6 +143,51 @@
                 grid-column: 2/3;
             }
 
+            .boutons {
+                grid-row: 3/4;
+                justify-self: center;
+                align-self: center;
+                
+            }
+
+            .searchGoogle {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: rgb(95, 99, 104);
+                border: none;
+                border-radius: 4px;
+                height: 36px;
+                width: 150px;
+                margin-right: 6px;
+                background-color: rgb(242, 242, 242);
+            }
+            .searchGoogle:hover {
+                border: solid;
+                border-color: rgb(198,198,198);
+                border-width: 1px;
+                background-color: rgb(248, 248, 248);
+                color:black;
+            }
+            .lucky {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: rgb(95, 99, 104);
+                border: none;
+                border-radius: 4px;
+                height: 36px;
+                width: 150px;
+                background-color: rgb(242, 242, 242);
+            }
+            .lucky:hover {
+                border: solid;
+                border-color: rgb(198,198,198);
+                border-width: 1px;
+                background-color: rgb(248, 248, 248);
+                color:black;
+            }
+
+            
+
 
         </style>
     </head>
@@ -151,7 +195,7 @@
         <div class="page">
             <div class="header">
                 <div class="gmail">
-                    <a href=https://mail.google.com/mail/u/0/?ogbl#inbox">Gmail</a>
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">Gmail</a>
                 </div>
                 <div class="images">
                     <a href="https://www.google.fr/imghp?hl=fr&tab=wi&ogbl">Images</a>
@@ -167,6 +211,10 @@
                 <div class="searchBar">
                     <div class="loupe"></div>
                     <input type="search" class="searchArea">
+                </div>
+                <div class="boutons">
+                    <button class="searchGoogle">Recherche Google</button>
+                    <button class="lucky">J'ai de la chance</button>
                 </div>
             </div>
         </div>
